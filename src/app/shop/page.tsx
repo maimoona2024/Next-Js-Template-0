@@ -10,7 +10,7 @@ const shop = () => {
             <div>
                 <Image src={"/shop.png"} width={1440} height={36} alt=''></Image>
             </div>
-            <div className='bg-[#f0dbdb] w-full flex items-center gap-4 px-8 py-4'>
+            <div className='bg-[#f0dbdb] w-full flex-col sm:flex sm:flex-row items-center gap-4 px-8 py-4'>
                 <div className='flex items-center gap-4'>
                     <CiFilter />
                     <p>Filter</p>
@@ -25,7 +25,7 @@ const shop = () => {
                     <p>Showing 1–16 of 32 results</p>
                 </div>
                 {/* Button Group 1 */}
-                <div className="font-[sans-serif] w-max mx-auto  rounded-lg flex">
+                <div className="font-[sans-serif] w-max mx-auto  rounded-lg flex sm:flex-row flex-col">
                     <button type="button" className="px-6 py-3 bg-white text-black text-sm font-semibold border-none outline-none hover:bg-gray-200 active:bg-gray-300">Show</button>
                     <button type="button" className="px-6 py-3 bg-white text-black text-sm font-semibold border-none outline-none hover:bg-gray-200 active:bg-gray-300">16</button>
                     <div className='text-[#f0dbdb]'>
@@ -38,7 +38,7 @@ const shop = () => {
 
 
             <section>
-                <div className='grid grid-cols-1 md:grid-cols-4 px-16 pt-16'>
+                <div className='grid grid-cols-1 md:grid-cols-3 sm:px-16 px-auto pt-16'>
                     {/* Card 1 */}
                     <div className="w-[287px] h-[382px]">
                         <div>
@@ -228,8 +228,8 @@ const shop = () => {
 
 
             {/* last section of shop */}
-            <section className='h-[300px] px-16 py-20 bg-[#FAF4F4]'>
-                <div className='grid grid-cols-1 md:grid-cols-3'>
+            <section className='h-auto sm:h-[300px] px-16 py-20 bg-[#FAF4F4]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     <div className='w-[250px] h-[108px]'>
                         <p className='text-[32px]'>Free Delivery</p>
                         <p>For all oders over $50, consectetur adipim scing elit.</p>

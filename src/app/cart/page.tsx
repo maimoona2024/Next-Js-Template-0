@@ -146,7 +146,7 @@ const cart = () => {
 
                         </div>
                     </div>
-
+{/* Right section */}
                     <div className="bg-gray-100 rounded-md p-4 md:sticky top-0">
                         <div className="flex border border-[#FBEBB5] overflow-hidden rounded-md">
                             <input type="email" placeholder="Promo code"

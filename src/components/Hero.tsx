@@ -9,9 +9,9 @@ const Hero = () => {
         <div>
             {/* Hero Section */}
             <section className='bg-[#FBEBB5]'>
-                <div className='grid grid-cols-1 md:grid-cols-2 px-20'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 px-20'>
                     {/* Left Side */}
-                    <div className='w-[440px] h-[276px] px-14 py-44'>
+                    <div className='sm:w-[440px] h-[276px] sm:px-14 py-44'>
                         <p className='font-bold text-[25px] md:text-[44px]'>Rocket Single</p>
                         <p className='font-bold text-[25px] md:text-[44px]'>Seater</p>
                         <button className=' border-b border-gray-950 font-bold'>Shop Now</button>
@@ -48,7 +48,7 @@ const Hero = () => {
 
 
             {/* Section no 3 top pick for you */}
-            <section className='h-[600px] py-20 px-8'>
+            <section className='h-auto md:h-[900px] py-20 px-8 w-full'>
                 <div className='flex flex-col items-center'>
                     <h1 className='text-[36px]'>Top Picks For You</h1>
                     <p className='text-[#9F9F9F]'>Find a bright ideal to suit your taste with our great selection of suspension, floor and table lights.</p>
@@ -56,9 +56,9 @@ const Hero = () => {
 
 
                 {/* Cards of top pick for you */}
-                <div className='grid grid-cols-1 md:grid-cols-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3'>
                     {/* Card 1 */}
-                    <div className="w-[287px] h-[382px]">
+                    <div className="w-[240px] h-[382px]">
                         <div>
                             <Image src={"/m1.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -69,7 +69,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 2 */}
-                    <div className="w-[287px] h-[382px]">
+                    <div className="w-[240px] h-[382px]">
                         <div>
                             <Image src={"/m2.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 3 */}
-                    <div className="w-[287px] h-[382px]">
+                    <div className="w-[240px] h-[382px]">
                         <div>
                             <Image src={"/m3.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -91,7 +91,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 4 */}
-                    <div className="w-[287px] h-[382px]">
+                    <div className="w-[240px] h-[382px]">
                         <div>
                             <Image src={"/m4.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -110,7 +110,7 @@ const Hero = () => {
 
 
             {/* New Arrival Asgaard Sofa Section */}
-            <section className='bg-[#FFF9E5] h-[550px] py-20 px-8'>
+            <section className='bg-[#FFF9E5] h-auto md:h-[550px] py-20 px-8'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     {/* left side */}
                     <div>
@@ -129,7 +129,7 @@ const Hero = () => {
 
 
             {/* Our Blogs section */}
-            <section className='px-8 py-8'>
+            <section className='px-8 py-8 w-full'>
                 {/* Our blogs Heading */}
                 <div className='flex flex-col items-center py-8'>
                     <h1 className='text-[36px]'>Our Blogs</h1>
@@ -208,7 +208,7 @@ const Hero = () => {
             {/* Instagram Section */}
             <section className='bg-[url("/ins.png")] bg-cover bg-center h-[450px] w-full flex flex-col justify-center items-center'>
                 <div className='flex flex-col items-center gap-4'>
-                    <h1 className='text-4xl font-extrabold text-[45px]'>Our Instagram</h1>
+                    <h1 className='text-4xl font-extrabold sm:text-[45px]'>Our Instagram</h1>
                     <p>Follow our store on Instagram</p>
                     <button className='bg-[#f8e6e6] shadow-lg px-8 py-1 w-[255px] h-[64px] rounded-3xl texl-[20px]'>Follow Us</button>
                 </div>

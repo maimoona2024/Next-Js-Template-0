@@ -8,10 +8,9 @@ const contact = () => {
             <div>
                 <Image src={"/contact.png"} width={1440} height={36} alt=''></Image>
             </div>
-            <div className='flex flex-col items-center py-16'>
-                <h1 className='text-[36px]'>Get In Touch With Us</h1>
-                <p className='text-[#9F9F9F]'>For More Information About Our Product & Services. Please Feel Free To Drop Us</p>
-                <p className='text-[#9F9F9F]'>
+            <div className='flex flex-col items-center py-16 px-8'>
+                <h1 className='sm:text-[36px] sm:font-bold'>Get In Touch With Us</h1>
+                <p className='text-[#9F9F9F] w-auto sm:w-[600px]'>For More Information About Our Product & Services. Please Feel Free To Drop Us
                     An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
                 </p>
             </div>
