@@ -23,9 +23,8 @@ const Shop = () => {
                         onClick={() => setOpen(!open)}
                     />
                     <nav
-                        className={`${
-                            open ? "block" : "hidden"
-                        } lg:flex lg:items-center lg:w-auto w-full flex flex-col lg:flex-row items-center`}
+                        className={`${open ? "block" : "hidden"
+                            } lg:flex lg:items-center lg:w-auto w-full flex flex-col lg:flex-row items-center`}
                     >
                         <ul className="text-base w-full text-black lg:flex lg:justify-between flex flex-col lg:flex-row gap-4">
                             <li className="px-4 flex justify-center md:items-center gap-2 lg:px-5 py-2 hover:text-gray-800 font-medium cursor-pointer">
@@ -73,7 +72,213 @@ const Shop = () => {
                 </div>
             </header>
 
-            {/* Add your sections and components below as needed */}
+            <section>
+                <div className='w-full grid grid-cols-1 md:grid-cols-3 sm:px-16 px-auto pt-16'>
+                    {/* Card 1 */}
+                    <div className="sm:w-[287px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m1.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Trenton modular sofa_3
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 2 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m2.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Granite dining table with dining
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 3 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m3.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Outdoor bar table and stool
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 4 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m4.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Plain console with teak mirror
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 5 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m5.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Trenton modular sofa_3
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 6 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m6.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Granite dining table with dining
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 7 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m7.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Outdoor bar table and stool
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 8 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m8.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Plain console with teak mirror
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 9 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m9.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Trenton modular sofa_3
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 10 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m10.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Granite dining table with dining
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 11 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m11.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Outdoor bar table and stool
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 12 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m12.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Plain console with teak mirror
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 13 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m13.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Trenton modular sofa_3
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 14 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m14.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Granite dining table with dining
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 15*/}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m15.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Outdoor bar table and stool
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                    {/* Card 16 */}
+                    <div className="sm:w-[287px] h-[382px] flex flex-col items-center">
+                        <div>
+                            <Image src={"/m16.png"} width={200} height={200} alt=''></Image>
+                        </div>
+                        <div className="p-6">
+                            <p className="mt-4 text-sm text-gray-500 leading-relaxed">Plain console with teak mirror
+                            </p>
+                            <h3 className="text-gray-800 text-xl font-bold">Rs. 25,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Next pages buttons */}
+            <div className='flex gap-2 justify-center pb-16'>
+                <button type="button" className="px-5 py-2.5 rounded-lg text-sm tracking-wider font-medium outline-none bg-[#f7e39c] text-black hover:bg-transparent hover:text-black  transition-all duration-300">1</button>
+                <button type="button" className="px-5 py-2.5 rounded-lg text-sm tracking-wider font-medium outline-none bg-[#f7e39c] text-black hover:bg-transparent hover:text-black  transition-all duration-300">2</button>
+                <button type="button" className="px-5 py-2.5 rounded-lg text-sm tracking-wider font-medium outline-none bg-[#f7e39c] text-black hover:bg-transparent hover:text-black  transition-all duration-300">3</button>
+                <button type="button" className="px-5 py-2.5 rounded-lg text-sm tracking-wider font-medium outline-none bg-[#f7e39c] text-black hover:bg-transparent hover:text-black  transition-all duration-300">Next</button>
+            </div>
+
+
+            {/* last section of shop */}
+            <section className='h-auto sm:h-[300px] px-16 py-20 bg-[#FAF4F4]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    <div className='w-[250px] h-[108px]'>
+                        <p className='text-[32px]'>Free Delivery</p>
+                        <p>For all oders over $50, consectetur adipim scing elit.</p>
+                    </div>
+                    <div className='w-[250px] h-[108px]'>
+                        <p className='text-[32px]'>90 Days Return</p>
+                        <p>If goods have problems, consectetur adipim scing elit.</p>
+                    </div>
+                    <div className='w-[250px] h-[108px]'>
+                        <p className='text-[32px]'>Secure Payment</p>
+                        <p>100% secure payment, consectetur adipim scing elit..</p>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

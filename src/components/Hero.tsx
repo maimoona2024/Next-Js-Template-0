@@ -56,9 +56,9 @@ const Hero = () => {
 
 
                 {/* Cards of top pick for you */}
-                <div className='grid grid-cols-1 md:grid-cols-3'>
+                <div className='w-full grid grid-cols-1 md:grid-cols-3'>
                     {/* Card 1 */}
-                    <div className="w-[240px] h-[382px]">
+                    <div className="sm:w-[240px] h-[382px] flex flex-col items-center">
                         <div>
                             <Image src={"/m1.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -69,7 +69,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 2 */}
-                    <div className="w-[240px] h-[382px]">
+                    <div className="sm:w-[240px] h-[382px] flex flex-col items-center">
                         <div>
                             <Image src={"/m2.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 3 */}
-                    <div className="w-[240px] h-[382px]">
+                    <div className="sm:w-[240px] h-[382px] flex flex-col items-center">
                         <div>
                             <Image src={"/m3.png"} width={200} height={200} alt=''></Image>
                         </div>
@@ -91,7 +91,7 @@ const Hero = () => {
                         </div>
                     </div>
                     {/* Card 4 */}
-                    <div className="w-[240px] h-[382px]">
+                    <div className="sm:w-[240px] h-[382px] flex flex-col items-center">
                         <div>
                             <Image src={"/m4.png"} width={200} height={200} alt=''></Image>
                         </div>
