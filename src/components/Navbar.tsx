@@ -28,21 +28,26 @@ const Navbar = () => {
                             </li>
                             <li className="lg:px-5 py-2 hover:text-gray-800 font-medium cursor-pointer">
                                 <Link href="/shop">Shop</Link>
-
-
                             </li>
                             <li className="lg:px-5 py-2 hover:text-gray-800 font-medium cursor-pointer">
                                 <Link href="/cart">Cart</Link>
-
                             </li>
                             <li className="lg:px-5 py-2 hover:text-gray-800 font-medium cursor-pointer">
                                 <Link href="/contact">Contact</Link>
                             </li>
                             <li className='p-3 cursor-pointer flex sm:flex-row sm:justify-center items-center flex-col gap-2'>
-                            <FaRegUser className='text-md'/>
-                            <IoSearch className='text-md'/>
-                            <FaRegHeart className='text-md'/>
-                            <MdOutlineShoppingCart className='text-md'/>
+                                <Link href="/account">
+                                    <FaRegUser className="text-md hover:text-gray-800" />
+                                </Link>
+                                <Link href="/search">
+                                    <IoSearch className="text-md hover:text-gray-800" />
+                                </Link>
+                                <Link href="/wishlist">
+                                <FaRegHeart className='text-md hover:text-gray-800' />
+                                </Link>
+                                <Link href="/cart">
+                                    <MdOutlineShoppingCart className="text-md hover:text-gray-800" />
+                                </Link>
                             </li>
                         </ul>
                     </nav>

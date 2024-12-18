@@ -1,19 +1,46 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaMinus } from "react-icons/fa";
+import { IoMdArrowDropright } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
-
+import aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 const cart = () => {
+    useEffect(() => {
+        aos.init({
+            easing: "ease-out-back",
+            duration: 1200,
+            delay: 100,
+            mirror: true,
+            anchorPlacement: "bottom-bottom",
+            offset: 160,
+        });
+        aos.refresh();
+    }, []);
     return (
         <div>
-            <div>
-                <Image src={"/cart.png"} width={1440} height={36} alt=''></Image>
+            {/* First banner section */}
+            <div className="bg-[url('/r1.png')] bg-cover bg-center h-[316px] flex flex-col items-center justify-center">
+                <Image src={"/icons.png"} width={77} height={77} alt="" data-aos="zoom-in"></Image>
+                <h1 className="text-[42px] font-medium
+                         " data-aos="zoom-in">Cart</h1>
+                <div className="flex items-center justify-center cursor-pointer" data-aos="flip-left">
+                    <p className="font-semibold">Home</p>
+                    <IoMdArrowDropright className="text-xl" />
+                    <p>Cart</p>
+                </div>
             </div>
+
+
+
+
             {/* Cart Section */}
             <div className="font-sans md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4">
                 <div className="grid md:grid-cols-3 gap-4">
-                    <div className="md:col-span-2 bg-gray-100 p-4 rounded-md">
+                    <div className="md:col-span-2 bg-gray-100 p-4 rounded-md" data-aos="flip-left">
                         <h2 className="text-2xl font-bold text-gray-800">Cart</h2>
                         <hr className="border-gray-300 mt-4 mb-8" />
 
@@ -25,7 +52,7 @@ const cart = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-base font-bold text-gray-800">Velvet Sneaker</h3>
+                                        <h3 className="text-base font-bold text-gray-800">Asgaard Sofa</h3>
                                         <h6 className="text-xs text-red-500 cursor-pointer mt-0.5">Remove</h6>
 
                                         <div className="flex gap-4 mt-4">
@@ -67,7 +94,7 @@ const cart = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-base font-bold text-gray-800">Smart Watch Timex</h3>
+                                        <h3 className="text-base font-bold text-gray-800">Trenton modular Table_3</h3>
                                         <h6 className="text-xs text-red-500 cursor-pointer mt-0.5">Remove</h6>
 
                                         <div className="flex gap-4 mt-4">
@@ -109,7 +136,7 @@ const cart = () => {
                                     </div>
 
                                     <div>
-                                        <h3 className="text-base font-bold text-gray-800">Sun Glass</h3>
+                                        <h3 className="text-base font-bold text-gray-800">Trenton modular sofa_3</h3>
                                         <h6 className="text-xs text-red-500 cursor-pointer mt-0.5">Remove</h6>
 
                                         <div className="flex gap-4 mt-4">
@@ -146,8 +173,8 @@ const cart = () => {
 
                         </div>
                     </div>
-{/* Right section */}
-                    <div className="bg-gray-100 rounded-md p-4 md:sticky top-0">
+                    {/* Right section */}
+                    <div className="bg-gray-100 rounded-md p-4 md:sticky top-0" data-aos="flip-right">
                         <div className="flex border border-[#FBEBB5] overflow-hidden rounded-md">
                             <input type="email" placeholder="Promo code"
                                 className="w-full outline-none bg-white text-gray-600 text-sm px-4 py-2.5" />
@@ -170,6 +197,23 @@ const cart = () => {
                     </div>
                 </div>
             </div>
+            {/* last section of shop */}
+            <section className='my-8 h-auto sm:h-[500px] md:h-[350px] lg:h-[300px] px-16 py-20 bg-[#FAF4F4]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    <div className='w-auto sm:w-full md:w-[250px]  h-auto sm:h-[108px]'>
+                        <p className='font-bold text-[22px] sm:text-[32px]'>Free Delivery</p>
+                        <p>For all oders over $50, consectetur adipim scing elit.</p>
+                    </div>
+                    <div className='w-auto sm:w-full md:w-[250px]  h-auto sm:h-[108px]'>
+                        <p className='font-bold text-[22px] sm:text-[32px]'>90 Days Return</p>
+                        <p>If goods have problems, consectetur adipim scing elit.</p>
+                    </div>
+                    <div className='w-auto sm:w-full md:w-[250px] h-auto sm:h-[108px]'>
+                        <p className='font-bold text-[22px] sm:text-[32px]'>Secure Payment</p>
+                        <p>100% secure payment, consectetur adipim scing elit..</p>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
