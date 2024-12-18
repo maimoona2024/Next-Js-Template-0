@@ -5,7 +5,7 @@ import Image from 'next/image';
 import aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-const account = () => {
+const Account = () => {
     useEffect(() => {
         aos.init({
             easing: "ease-out-back",
@@ -97,4 +97,4 @@ const account = () => {
     )
 }
 
-export default account
+export default Account

@@ -6,7 +6,7 @@ import aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
 import Image from 'next/image'
-const wishlist = () => {
+const Wishlist = () => {
       useEffect(() => {
         aos.init({
           easing: "ease-out-back",
@@ -82,4 +82,4 @@ const wishlist = () => {
     )
 }
 
-export default wishlist
+export default Wishlist

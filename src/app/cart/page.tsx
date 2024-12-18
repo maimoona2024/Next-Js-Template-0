@@ -8,7 +8,7 @@ import { FaPlus } from "react-icons/fa";
 import aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-const cart = () => {
+const Cart = () => {
     useEffect(() => {
         aos.init({
             easing: "ease-out-back",
@@ -218,4 +218,4 @@ const cart = () => {
     )
 }
 
-export default cart
+export default Cart

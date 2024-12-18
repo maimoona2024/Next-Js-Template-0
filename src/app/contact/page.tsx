@@ -6,7 +6,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-const contact = () => {
+const Contact = () => {
     useEffect(() => {
         aos.init({
             easing: "ease-out-back",
@@ -111,4 +111,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact

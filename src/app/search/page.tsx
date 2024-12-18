@@ -6,7 +6,7 @@ import Aos from "aos";
 import aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-const search = () => {
+const Search = () => {
     useEffect(() => {
             aos.init({
               easing: "ease-out-back",
@@ -54,4 +54,4 @@ const search = () => {
     )
 }
 
-export default search
+export default Search
